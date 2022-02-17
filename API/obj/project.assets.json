@@ -72,6 +72,29 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "Readtle.Blogs.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Readtle.Blogs.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Readtle.Blogs.Domain.dll": {}
+        }
+      },
+      "Readtle.Blogs.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Readtle.Blogs.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Readtle.Blogs.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Readtle.Blogs.Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -200,10 +223,22 @@
         "swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "Readtle.Blogs.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Domain/Domain.csproj",
+      "msbuildProject": "../Domain/Domain.csproj"
+    },
+    "Readtle.Blogs.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../Infrastructure/Infrastructure.csproj",
+      "msbuildProject": "../Infrastructure/Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Readtle.Blogs.Domain >= 1.0.0",
+      "Readtle.Blogs.Infrastructure >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
   },
@@ -214,7 +249,7 @@
     "version": "1.0.0",
     "restore": {
       "projectUniqueName": "/Users/spph/work/ktechinno/readtle.blogs.api/API/API.csproj",
-      "projectName": "API",
+      "projectName": "Readtle.Blogs.API",
       "projectPath": "/Users/spph/work/ktechinno/readtle.blogs.api/API/API.csproj",
       "packagesPath": "/Users/spph/.nuget/packages/",
       "outputPath": "/Users/spph/work/ktechinno/readtle.blogs.api/API/obj/",
@@ -231,7 +266,14 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/spph/work/ktechinno/readtle.blogs.api/Domain/Domain.csproj": {
+              "projectPath": "/Users/spph/work/ktechinno/readtle.blogs.api/Domain/Domain.csproj"
+            },
+            "/Users/spph/work/ktechinno/readtle.blogs.api/Infrastructure/Infrastructure.csproj": {
+              "projectPath": "/Users/spph/work/ktechinno/readtle.blogs.api/Infrastructure/Infrastructure.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

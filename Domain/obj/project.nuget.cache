@@ -1,8 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "1RlHc8xTNn4Yq6ZKojgE+RBR8FfWBvEXV4M19kWt5fuf9d7/n4ngqMcyzzGhaMNvQdX9IO9CiqURX5/ZldCVWA==",
+  "dgSpecHash": "t364/frm2BLCo7lV34d8E0N5EbSL2makyBqI3uy2aqiLirgKHUvCW5DD10cPqs8IErZQbT0w7rAH2KfdK+BsgA==",
   "success": true,
   "projectFilePath": "/Users/spph/work/ktechinno/readtle.blogs.api/Domain/Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/spph/.nuget/packages/dnsclient/1.4.0/dnsclient.1.4.0.nupkg.sha512",
+    "/Users/spph/.nuget/packages/mongodb.bson/2.14.1/mongodb.bson.2.14.1.nupkg.sha512",
+    "/Users/spph/.nuget/packages/mongodb.driver/2.14.1/mongodb.driver.2.14.1.nupkg.sha512",
+    "/Users/spph/.nuget/packages/mongodb.driver.core/2.14.1/mongodb.driver.core.2.14.1.nupkg.sha512",
+    "/Users/spph/.nuget/packages/mongodb.libmongocrypt/1.3.0/mongodb.libmongocrypt.1.3.0.nupkg.sha512",
+    "/Users/spph/.nuget/packages/sharpcompress/0.30.1/sharpcompress.0.30.1.nupkg.sha512",
+    "/Users/spph/.nuget/packages/system.buffers/4.5.1/system.buffers.4.5.1.nupkg.sha512",
+    "/Users/spph/.nuget/packages/system.runtime.compilerservices.unsafe/5.0.0/system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
