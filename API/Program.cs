@@ -1,5 +1,10 @@
 using Readtle.Blogs.Infrastructure.Models;
 using Microsoft.Extensions.Options;
+using Readtle.Blogs.Domain.Interfaces;
+using Readtle.Blogs.Domain.Interfaces.Services;
+using Readtle.Blogs.Domain.Entities;
+using Readtle.Blogs.Domain.Services;
+using Readtle.Blogs.Infrastructure.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,11 +18,11 @@ builder.Services.AddSingleton<IMongoDbSettings>(sp =>
 #endregion
 
 #region Services dependency injection
-
+builder.Services.AddScoped<IBlogService, BlogService>();
 #endregion
 
 #region Repositories dependency injection
-
+builder.Services.AddSingleton<IRepository<Blog>, BlogRepository>();
 #endregion
 
 builder.Services.AddControllers();
