@@ -1,6 +1,6 @@
-namespace Readtle.Blogs.Domain.Interfaces
+namespace Readtle.Blogs.Domain.Interfaces.Repositories
 {
-    public interface IRepository<T>
+    public interface IBaseRepository<T>
     {
         Task<T> GetItem(string id);
         Task<List<T>> GetAll();

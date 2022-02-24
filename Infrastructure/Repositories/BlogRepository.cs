@@ -1,11 +1,11 @@
 using MongoDB.Driver;
 using Readtle.Blogs.Domain.Entities;
-using Readtle.Blogs.Domain.Interfaces;
+using Readtle.Blogs.Domain.Interfaces.Repositories;
 using Readtle.Blogs.Infrastructure.Models;
 
 namespace Readtle.Blogs.Infrastructure.Repositories
 {
-    public class BlogRepository : IRepository<Blog>
+    public class BlogRepository : IBaseRepository<Blog>
     {
         private readonly IMongoCollection<Blog> _blogs;
 
