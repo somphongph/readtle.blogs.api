@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('1') {
+    stage('Clean workspace') {
       steps {
-        sh 'dotnet restore'
+        cleanWs()
       }
     }
 
